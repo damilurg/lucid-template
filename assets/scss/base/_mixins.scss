@@ -1,0 +1,34 @@
+%underline {
+  content: "";
+  width: 42px;
+  height: 2px;
+  display: block;
+  margin: 34px auto 0;
+  background: url(/assets/icons/underlines.png);
+  background-size: cover;
+}
+
+// Media Query Mixin
+@mixin phone {
+  @media (min-device-width: #{$phone}) {
+    @content;
+  }
+}
+
+@mixin smallTablet {
+  @media (max-device-width: #{$smallTablet}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-device-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-device-width: #{$desktop}) {
+    @content;
+  }
+}

@@ -1,0 +1,78 @@
+// Variables.
+@import "base/variables";
+@import "base/mixins";
+@import "base/fonts";
+@import "base/basic";
+
+// Components.
+@import "sections/section-header";
+@import "sections/section-features";
+@import "sections/section-details";
+@import "sections/section-prices";
+@import "sections/section-contact";
+@import "sections/section-footer";
+
+#section-get-theme-block {
+  background-color: $black;
+
+  .container-xl {
+    display: flex;
+    justify-content: space-between;
+
+    .get-theme-block {
+      &-text {
+        display: flex;
+        padding: 60px 0;
+      }
+
+      &-buttons {
+        padding: 60px 0;
+
+        .buttons-trans {
+          margin-right: 16px;
+        }
+      }
+    }
+
+    h2 {
+      color: $white;
+
+      &:last-child {
+        font-family: $ssplight;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.map {
+  margin-top: -75px;
+  position: relative;
+
+  iframe {
+    width: 100%;
+  }
+}
+
+
+// Media-queries.
+@import "sections/media-queries";
+// Slick.
+@import "slick-carousel/slick/slick.scss";
+
+// Font Awesome..
+// rewrite path to icons fonts.
+$fa-font-path: "../../../node_modules/font-awesome/fonts";
+@import "font-awesome/scss/font-awesome.scss";
+
+// Bootstrap.
+
+//Rewrite bootstrap container width.
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1200px
+) !default;
+// And import framework.
+@import "bootstrap/scss/bootstrap.scss";
