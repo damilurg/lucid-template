@@ -103,7 +103,7 @@
 
   .intro {
     &-left {
-      margin-top: 39px;
+      margin: 39px 0;
 
       .intro-h1 {
         font-family: $sspsemibold;
@@ -133,7 +133,6 @@
     }
 
     &-right {
-      text-align: right;
       padding: 0 46px;
     }
   }

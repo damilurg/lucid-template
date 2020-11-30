@@ -57,7 +57,13 @@
                     <button class="buttons-trans" onclick="window.location='#features'">View features</button>
                 </div>
             </div>
-            <div class="col-md-6 intro-right"><img src="assets/images/header_devices.png" alt="Mobile Devices"></div>
+            <div class="col-md-6 intro-right">
+                <picture>
+                    <source media="(max-width: 1200px)" srcset="assets/images/header_devices.png">
+                    <source media="(min-width: 768)" srcset="assets/images/header_devices.jpg">
+                    <img src="assets/images/header_devices.png" alt="Mobile Devices">
+                </picture>
+                </div>
         </div>
     </div>
 </header>
@@ -262,8 +268,7 @@
     <section id="get-theme-block">
         <div class="container-xl">
             <div class="get-theme-block-text">
-                <h2 class="h2">Like what you see?</h2>
-                <h2 class="h2">Get this great theme now!</h2>
+                <h2 class="h2">Like what you see? <span>Get this great theme now</span></h2>
             </div>
             <div class="get-theme-block-buttons">
                 <button class="buttons-trans" onclick="window.location='#features'">View features</button>
