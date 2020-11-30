@@ -1,41 +1,30 @@
+// Fonts.
 @font-face {
   font-family: SourceSansProRegular;
-  font-display: optional;
-  font-style: normal;
-  font-weight: 400;
+  src: url(/assets/fonts/source-sans-pro/SourceSansPro-Regular.otf);
 }
 
 @font-face {
   font-family: SourceSansProSemiBold;
-  font-display: optional;
-  font-style: normal;
-  font-weight: 600;
+  src: url(/assets/fonts/source-sans-pro/SourceSansPro-Semibold.otf);
 }
 
 @font-face {
   font-family: SourceSansProBold;
-  font-display: optional;
-  font-style: normal;
-  font-weight: 700;
+  src: url(/assets/fonts/source-sans-pro/SourceSansPro-Bold.otf);
 }
 
 @font-face {
   font-family: SourceSansProLight;
-  font-display: optional;
-  font-style: normal;
-  font-weight: 300;
+  src: url(/assets/fonts/source-sans-pro/SourceSansPro-Light.otf);
 }
 
 @font-face {
   font-family: SourceSansProItalic;
-  font-display: optional;
-  font-style: normal;
-  font-weight: 400;
+  src: url(/assets/fonts/source-sans-pro/SourceSansPro-It.otf);
 }
 
 @font-face {
   font-family: QuicksandBold;
-  font-display: optional;
-  font-style: normal;
-  font-weight: 700;
+  src: url(/assets/fonts/quicksand/Quicksand-Bold.otf);
 }

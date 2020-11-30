@@ -1,11 +1,372 @@
-extends ../layouts/layout
-block content
-main
-    block features
-    block details
-    block details-1
-    block prices-comments
-    block theme-block
-    block prices-list
-    block contact
-    block map
+doctype html
+html(lang='en')
+    head
+        meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(http-equiv='X-UA-Compatible' content='ie=edge')
+        link(rel='preconnect' href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap' rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap' rel='stylesheet')
+        link(rel='stylesheet' href='dist/css/cannon.css')
+        title Lucid
+    body
+        header#header
+            .container-xl
+                .row.header-row
+                    .col-xl-2.col-md-3.col-lg-2.logo-section
+                        .logo
+                            a(href='index.html')
+                                h1.logo-left Lucid
+                                p.logo-right OnePage Theme
+                    .col-xl-10.col-md-9.col-12.col-lg-10
+                        .menu
+                            nav.navbar.navbar-expand-md
+                                button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarToggler' aria-controls='navbarToggler' aria-expanded='false' aria-label='Toggle navigation')
+                                    svg(xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' role='img' focusable='false')
+                                        title Menu
+                                        path(stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22')
+                                #navbarToggler.collapse.navbar-collapse
+                                    ul.menu-list
+                                        li.menu-list-item.is-active
+                                            a(href='index.html') Home
+                                        li.menu-list-item
+                                            a(href='#features') Features
+                                        li.menu-list-item
+                                            a(href='#details') About
+                                        li.menu-list-item
+                                            a(href='#prices-comments') Testimonials
+                                        li.menu-list-item
+                                            a(href='#prices-list') Pricing
+                                        li.menu-list-item
+                                            a(href='#contact') Contact
+                .row
+                    .intro-left.col-md-6
+                        h3.h3.intro-h3 introducing lucid theme
+                        h1.intro-h1 Carefully crafted and beautiful landing page.
+                        p.p.intro-p
+                            | Etiam ullamcorper et turpis eget hendrerit. Praesent varius risus
+                            br
+                            | mi, at
+                            |                     elementum
+                            |                     magna
+                            |                     ultricies accumsan. Cras venenatis
+                            br
+                            | lacus sed dolor placerat tempus. Morbi blandit at neque ut
+                            br
+                            | imperdiet.
+                        .buttons
+                            button.buttons-blue(onclick="window.location='https://github.com/'") Download now
+                            button.buttons-trans(onclick="window.location='#features'") View features
+                    .col-md-6.intro-right
+                        img(src='assets/images/header_devices.png' alt='Mobile Devices')
+
+
+        main
+            section#features
+                .container-xl
+                    .features-title
+                        h3.h3
+                            | Product overview
+                        h2.h2
+                            | List of amazing features
+                    .features-elements
+                        .row
+                            .col-xl-3.col-sm-6.col-lg-3
+                                .features-elements-item
+                                    .features-elements-item-img
+                                        img(src='assets/icons/monitor.png' alt='Monitor')
+                                    .features-elements-item-desc
+                                        h4 Responsive
+                                        p.p
+                                            | Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia
+                                            | consectetur.
+                            .col-xl-3.col-sm-6.col-lg-3
+                                .features-elements-item
+                                    .features-elements-item-img
+                                        img(src='assets/icons/settings.png' alt='Monitor')
+                                    .features-elements-item-desc
+                                        h4 Customizable
+                                        p.p
+                                            | Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia
+                                            | consectetur.
+                            .col-xl-3.col-sm-6.col-lg-3
+                                .features-elements-item
+                                    .features-elements-item-img
+                                        img(src='assets/icons/like.png' alt='Monitor')
+                                    .features-elements-item-desc
+                                        h4 Lovely design
+                                        p.p
+                                            | Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia
+                                            | consectetur.
+                            .col-xl-3.col-sm-6.col-lg-3
+                                .features-elements-item
+                                    .features-elements-item-img
+                                        img(src='assets/icons/phone.png' alt='Monitor')
+                                    .features-elements-item-desc
+                                        h4 Mobile Friendly
+                                        p.p
+                                            | Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia
+                                            | consectetur.
+            section#details
+                .container-xl
+                    .row
+                        .details-left.col-md-6
+                            img(src='assets/images/details_device.png' alt='Mobile Phones 2')
+                        .details-right.col-md-6
+                            h3.h3 dip into the details
+                            h2.h2 Beautiful on every device
+                            p.p
+                                | Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                                br
+                                | Morbi accumsan
+                                |                         ipsum
+                                |                         velit. Nam
+                                |                         nec
+                                |                         tellus a odio tincidunt
+                                br
+                                | auctor a ornare odio. Sed non mauris vitae erat consequat
+                                br
+                                | auctor
+                                |                         eu
+                                |                         in elit.
+                            .details-right-items
+                                .details-right-item
+                                    .details-right-item-img-wrap
+                                        img(src='assets/icons/trophy.png' alt='Trophy')
+                                    p.p
+                                        | Awesome design
+                                .details-right-item
+                                    .details-right-item-img-wrap
+                                        img(style='margin-left: 3px;' src='assets/icons/mouse.png' alt='Mouse')
+                                    p.p
+                                        | Fully responsive
+                                .details-right-item
+                                    .details-right-item-img-wrap
+                                        img(style='margin-left: 3px;' src='assets/icons/energy.png' alt='Energy')
+                                    p.p
+                                        | Retina ready
+                                .details-right-item
+                                    .details-right-item-img-wrap
+                                        img(src='assets/icons/speedometer.png' alt='Speedometer')
+                                    p.p
+                                        | Tons of features and easy to use
+            section#details-1
+                .container-xl
+                    .row
+                        .col-md-6.col-lg-5
+                            h3.h3 Dip into the details
+                            h2.h2 Super easy to customize
+                            p.p
+                                | Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+                                | velit.
+                                | Nam nec
+                                | tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in
+                                | elit.
+                                | Class
+                                | aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        .col-md-6.col-lg-7
+                            img(src='assets/images/details_iphone.png' alt='Iphone 5')
+            section#prices-comments
+                .container-xl
+                    .prices-title
+                        h3.h3 Quality has its price
+                        h2.h2 Pricings & Plans
+                    .slider
+                        .slider-item.slider-item-1(style='width: 600px;')
+                            .slider-item-txt
+                                p.slider-item-txt-p
+                                    | Once upon a time all the Rivers combined to protest against the
+                                    | action
+                                    | of the
+                                    | Sea in making their waters salt. “When we come to you,” said they to the Sea.
+                            .slider-item-author
+                                .slider-item-author-icon
+                                    img(src='assets/images/avatar.png' alt='slider-item 1-author icon')
+                                .slider-item-author-info
+                                    p.slider-item-author-info-name John Doe
+                                    p.slider-item-author-info-spec CEO, the Rivers Company
+                        .slider-item.slider-item-2(style='width: 600px;')
+                            .slider-item-txt
+                                p.slider-item-txt-p
+                                    | A shoe is not only a design, but it's a part of your body language,
+                                    | the
+                                    | way you
+                                    | walk. The way you're going to move is quite dictated by your shoes.
+                            .slider-item-author
+                                .slider-item-author-icon
+                                    img(src='assets/images/Avatar.png' alt='slider-item 1-author icon')
+                                .slider-item-author-info
+                                    p.slider-item-author-info-name Dean Winchester
+                                    p.slider-item-author-info-spec UX DESIGNER, GOOGLE INC.
+                        .slider-item.slider-item-3(style='width: 600px;')
+                            .slider-item-txt
+                                p.slider-item-txt-p
+                                    | Once upon a time all the Rivers combined to protest against the
+                                    | action
+                                    | of the
+                                    | Sea in making their waters salt. “When we come to you,” said they to the Sea.
+                            .slider-item-author
+                                .slider-item-author-icon
+                                    img(src='assets/images/avatar.png' alt='slider-item 1-author icon')
+                                .slider-item-author-info
+                                    p.slider-item-author-info-name John Doe
+                                    p.slider-item-author-info-spec CEO, the Rivers Company
+                        .slider-item.slider-item-4(style='width: 600px;')
+                            .slider-item-txt
+                                p.slider-item-txt-p
+                                    | A shoe is not only a design, but it's a part of your body language,
+                                    | the
+                                    | way you
+                                    | walk. The way you're going to move is quite dictated by your shoes.
+                            .slider-item-author
+                                .slider-item-author-icon
+                                    img(src='assets/images/Avatar.png' alt='slider-item 1-author icon')
+                                .slider-item-author-info
+                                    p.slider-item-author-info-name Dean Winchester
+                                    p.slider-item-author-info-spec UX DESIGNER, GOOGLE INC.
+                        .slider-item.slider-item-5(style='width: 600px;')
+                            .slider-item-txt
+                                p.slider-item-txt-p
+                                    | Once upon a time all the Rivers combined to protest against the
+                                    | action
+                                    | of the
+                                    | Sea in making their waters salt. “When we come to you,” said they to the Sea.
+                            .slider-item-author
+                                .slider-item-author-icon
+                                    img(src='assets/images/avatar.png' alt='slider-item 1-author icon')
+                                .slider-item-author-info
+                                    p.slider-item-author-info-name John Doe
+                                    p.slider-item-author-info-spec CEO, the Rivers Company
+            section#get-theme-block
+                .container-xl
+                    .get-theme-block-text
+                        h2.h2 Like what you see?
+                        h2.h2 Get this great theme now!
+                    .get-theme-block-buttons
+                        button.buttons-trans(onclick="window.location='#features'") View features
+                        button.buttons-blue(onclick="window.location='https://github.com/'")
+                            | Download now
+            section#prices-list
+                .container-xl
+                    .prices-list-title
+                        h3.h3 Quality has its price
+                        h2.h2 Pricings & Plans
+                    .prices-list-pricelist
+                        .row
+                            .col-xl-3.col-sm-6.col-lg-3.pricelist__item
+                                .prices-list-pricelist-item-title
+                                    p Free
+                                .prices-list-pricelist-item-price
+                                    .prices-list-pricelist-item-price-int
+                                        span.prices-list-pricelist-item-price-int-dollar $
+                                        span.prices-list-pricelist-item-price-int-amount 0
+                                    p.p
+                                        | /per month
+                                .prices-list-pricelist-item-desc
+                                    p.p
+                                        | Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum
+                                        a(href='#') lacinia
+                                        |  consectetur.
+                                    button.buttons-trans Order Now
+                            .col-xl-3.col-sm-6.col-lg-3.pricelist__item
+                                .prices-list-pricelist-item-title
+                                    p Personal
+                                .prices-list-pricelist-item-price
+                                    .prices-list-pricelist-item-price-int
+                                        span.prices-list-pricelist-item-price-int-dollar $
+                                        span.prices-list-pricelist-item-price-int-amount 25
+                                    p.p
+                                        | /per month
+                                .prices-list-pricelist-item-desc
+                                    p.p
+                                        | Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum
+                                        a(href='#') lacinia
+                                        |  consectetur.
+                                    button.buttons-trans Order Now
+                            .col-xl-3.col-sm-6.col-lg-3.pricelist__item
+                                .prices-list-pricelist-item-title
+                                    p Business
+                                .prices-list-pricelist-item-price
+                                    .prices-list-pricelist-item-price-int
+                                        span.prices-list-pricelist-item-price-int-dollar $
+                                        span.prices-list-pricelist-item-price-int-amount 50
+                                    p.p
+                                        | /per month
+                                .prices-list-pricelist-item-desc
+                                    p.p
+                                        | Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum
+                                        a(href='#') lacinia
+                                        |  consectetur.
+                                    button.buttons-trans Order Now
+                            .col-xl-3.col-sm-6.col-lg-3.pricelist__item
+                                .prices-list-pricelist-item-title
+                                    p Ultimate
+                                .prices-list-pricelist-item-price
+                                    .prices-list-pricelist-item-price-int
+                                        span.prices-list-pricelist-item-price-int-dollar $
+                                        span.prices-list-pricelist-item-price-int-amount 99
+                                    p.p
+                                        | /per month
+                                .prices-list-pricelist-item-desc
+                                    p.p
+                                        | Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum
+                                        a(href='#') lacinia
+                                        |  consectetur.
+                                    button.buttons-trans Order Now
+            section#contact
+                .container-xl
+                    .contact-title
+                        h3.h3 Stay in touch
+                        h2.h2 Contact us
+                    .contact-contacts
+                        .row
+                            .col-xl-4.col-sm-4.d-flex.justify-content-center
+                                .contact-contacts-item
+                                    .contact-contacts-item-icon
+                                        img.contact-contacts-item-icon-img(src='assets/icons/phone.png' alt='Phone')
+                                    .contact-contacts-item-info
+                                        p.p Phone: (415) 124-5678 Fax: (412) 123-8290
+                            .col-xl-4.col-sm-4.d-flex.justify-content-center
+                                .contact-contacts-item
+                                    .contact-contacts-item-icon
+                                        img.contact-contacts-item-icon-img(src='assets/icons/pointer.png' alt='Phone')
+                                    .contact-contacts-item-info
+                                        p.p
+                                            | 1001 Brickell Bay Dr.
+                                            br
+                                            | Suite 1900
+                                            br
+                                            | Miami, FL 33131
+                            .col-xl-4.col-sm-4.d-flex.justify-content-center
+                                .contact-contacts-item
+                                    .contact-contacts-item-icon
+                                        img.contact-contacts-item-icon-img(src='assets/icons/mail.png' alt='Phone')
+                                    .contact-contacts-item-info
+                                        p.p support@yourname.com
+                    form.contact-form
+                        .contact-form-fields
+                            input#Name.contact-form-fields-field(type='text' name='Name' placeholder='Name *' required='')
+                            input#Email.contact-form-fields-field(type='email' name='Email' placeholder='Email *' required='')
+                            input#Subject.contact-form-fields-field(type='text' name='Subject' placeholder='Subject *' required='')
+                        .contact-form-textarea-wrap
+                            textarea#Message.contact-form-textarea-wrap-textarea(name='Message' placeholder='Message *' required='')
+                        .contact-form-button-wrap
+                            button.contact-form-button-wrap-button.buttons-blue Send message
+            isection.map
+                iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.2922450191454!2d25.315396951656584!3d50.71451717941221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4725997e35f529e9%3A0xeba249b67a64b0a9!2sInternetDevels!5e0!3m2!1suk!2sua!4v1574351456178!5m2!1suk!2sua' width='800' height='370' frameborder='0' style='border:0;' allowfullscreen='')
+        footer#footer
+            .footer-icons
+                a(href='#')
+                    i.fa.fa-behance
+                a(href='#')
+                    i.fa.fa-dribbble
+                a(href='#')
+                    i.fa.fa-twitter
+                a(href='#')
+                    i.fa.fa-facebook-f
+                a(href='#')
+                    i.fa.fa-linkedin
+            .footer-copyright
+                p copyright © 2014 lucid onepage theme
+        script(async='' defer='' src='dist/js/cannon.js')
+

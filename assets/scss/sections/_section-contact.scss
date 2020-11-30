@@ -7,6 +7,12 @@
     &-title {
       text-align: center;
       position: relative;
+
+      h3 {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 48px;
+      }
     }
 
     &-contacts {
@@ -42,6 +48,28 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+
+      @media screen and (max-width: 576px) {
+        padding: 30px;
+
+        &-fields-field,
+        textarea {
+          max-width: 300px;
+          width: 100% !important;
+        }
+
+        textarea  {
+          margin-top: 25px;
+        }
+
+        &-fields {
+          width: 100%;
+
+          ~ .contact-form-textarea-wrap {
+            width: 100%;
+          }
+        }
+      }
 
       .contact-form-fields {
         display: flex;

@@ -19,6 +19,12 @@
           @extend %underline;
         }
       }
+
+      h3 {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 48px;
+      }
     }
 
     &-elements {

@@ -37,8 +37,10 @@
     }
 
     .menu {
-      float: right;
-      margin-top: 28px;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 2;
 
       .navbar {
         padding: 0;
@@ -53,6 +55,10 @@
           list-style: none;
           display: flex;
           justify-content: space-between;
+          flex-direction: column;
+          align-items: center;
+          background-color: #0aadff;
+          z-index: 2;
 
           .menu-list-item {
             height: 30px;
@@ -99,25 +105,28 @@
     &-left {
       margin-top: 39px;
 
-      &-h1 {
+      .intro-h1 {
         font-family: $sspsemibold;
         color: $white;
         font-size: 48px;
-        margin-top: 20px;
         line-height: 1em;
         padding-right: 60px;
       }
 
-      &-p {
+      h3 {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 48px;
+      }
+
+      .intro-p {
         margin-top: 24px;
       }
 
       .buttons {
-        &:not(:last-child) {
-          margin-top: 61px;
-        }
+        margin-top: 61px;
 
-        &:last-child {
+        button:last-child {
           margin-left: 16px;
         }
       }

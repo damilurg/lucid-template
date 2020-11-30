@@ -30,26 +30,14 @@ gulp.task('scripts', function () {
     return gulp.src('assets/scripts/*.js')
         .pipe(include())
         .pipe(uglify())
-        .pipe(gulp.dest('dist/scripts'));
-});
-
-gulp.task('pug',function (){
-    return (
-        gulp.src('assets/pug/pages/*.pug')
-            .pipe(plumber())
-            .pipe(pug({
-                pretty: true
-            }))
-            .pipe(gulp.dest('templates'))
-            .pipe(connect.reload())
-    )
+        .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('clean', function () {
     return del(['dist']);
 });
 
-gulp.task('build', gulp.series(['clean', 'styles', 'scripts', 'pug']));
+gulp.task('build', gulp.series(['clean', 'styles', 'scripts']));
 
 gulp.task('server', function (done) {
     connect.server({
@@ -71,6 +59,5 @@ gulp.task('watch', function (done) {
     gulp.watch('assets/scripts/*.js', gulp.series(['build', 'livereload']));
     gulp.watch('assets/scss/**/*.scss', gulp.series(['build', 'livereload']));
     gulp.watch('*.html', gulp.series('livereload'));
-    gulp.watch('assets/pug/**/*.pug', gulp.series(['build', 'livereload']));
     done();
 });
