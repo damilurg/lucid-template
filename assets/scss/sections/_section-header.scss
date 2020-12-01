@@ -46,6 +46,10 @@
         padding: 0;
         margin: 0;
 
+        @media screen and(max-width: 767px){
+          background-color: #000;
+        }
+
         .navbar-toggler {
           color: $white;
           outline: none;
