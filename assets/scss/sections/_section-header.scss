@@ -1,5 +1,5 @@
 #header {
-  background: $black url(/assets/images/header_bg.png) center no-repeat;
+  background: $black url(../../assets/images/header_bg.png) center no-repeat;
   background-size: cover;
 
   .header-row {
@@ -55,10 +55,12 @@
           list-style: none;
           display: flex;
           justify-content: space-between;
-          flex-direction: column;
-          align-items: center;
-          background-color: #0aadff;
-          z-index: 2;
+
+          @media screen and(max-width: 767px){
+            flex-direction: column;
+            align-items: center;
+            background-color: #0aadff;
+          }
 
           .menu-list-item {
             height: 30px;
